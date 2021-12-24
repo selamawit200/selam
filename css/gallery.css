@@ -1,0 +1,163 @@
+nav ul{
+        
+    list-style-type: none;
+   
+    display: flex;
+    flex-direction: row;
+    margin: 2em;
+
+ justify-content: center;
+
+    position: relative;
+    
+    
+}
+     
+    nav ul  li a{ 
+       
+        border-radius:25% ;
+        padding: 0.5em ;
+        margin: 0.5em;
+        
+        float: left;
+    background-color: blanchedalmond;}
+        img[src ^="sel.jpg"]{ border-radius:100%;}
+        .h1gal{
+            text-transform:uppercase;
+            font-family: serif;
+            font: xx-large;}
+            body{background-color: darkturquoise;}
+        .photo__container{display: grid;
+            grid-template-columns:25% 75%;
+            grid-template-rows:auto ;}
+            
+            .photo{grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 2;}
+            
+            
+            .navigations{
+                grid-column-start: 2;
+                grid-column-end:3;
+                grid-row-start: 1;
+                grid-row-end: 2;}  
+                
+        .newyear__container{display: grid;
+            grid-template-columns:33% 33% 33%;
+            grid-template-rows:auto  ;
+            grid-gap: 1em;}
+            .newyear__photo{grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 2;}
+            
+            
+            .newyear{
+                grid-column-start: 2;
+                grid-column-end:4;
+                grid-row-start: 1;
+                grid-row-end: 2;}
+            
+                .wedding__container{display: grid;
+                    grid-template-columns:33% 33% 33%;
+                    grid-template-rows:auto  ;
+                    grid-column-gap: 1px;}
+            .wedding__image{ grid-column-start: 1;
+                    grid-column-end:2;
+                    grid-row-start: 1;
+                    grid-row-end: 2;}
+            .wedding{ grid-column-start: 2;
+                grid-column-end:4;
+                grid-row-start: 1;
+                grid-row-end: 2;}
+                .video__graguates{display: grid;
+                    grid-template-columns:33% 33% 33%;
+                    grid-template-rows:auto  ;
+                    grid-gap: 1em;}
+                
+            .video{grid-column-start:1;
+                    grid-column-end:2;
+                    grid-row-start:1;
+                    grid-row-end:2;}
+            .graguates{grid-column-start:2;
+                grid-column-end:4;
+                grid-row-start:1;
+                grid-row-end:2;}
+                .footer__form{display: grid;
+                    grid-template-columns:33% 33% 33%;
+                    grid-template-rows:auto auto  ;
+                    grid-column-gap: 
+                    1% 1%;}
+                
+            .form__action{grid-column-start:2;
+                    grid-column-end:4;
+                    grid-row-start:1;
+                    grid-row-end:2;}
+                    .footer__1{grid-column-start:1;
+                        grid-column-end:4;
+                        grid-row-start:2;
+                        grid-row-end:3;}
+        
+                
+body{background-color: dodgerblue;
+
+}
+@media screen and (max-width:70em){
+    .photo__container{
+        display: block;
+        flex-wrap: wrap;
+    }
+    .newyear__container{ display: block;
+        flex-wrap: wrap;}
+        .wedding__container{display: block;
+            flex-wrap: wrap;}
+        .video__graguates{display: block;
+            flex-wrap: wrap;}
+            h1{ display:block;
+                flex-wrap: wrap;}
+    
+    }
+
+    @media screen and (max-width:30em){
+        img.video {width:50;
+        height:50}
+        nav ul li a { 
+
+            border-radius:15% ;
+            padding: 0.3em ;
+            margin: 0.3em;
+
+        }
+}
+@media screen and (max-width:10em){ 
+img,video {width:10;
+height:1o;}
+nav ul li a { 
+
+border-radius:10% ;
+padding: 0.1em ;
+margin: 0.1em;}
+}
+
+    
+
+
+    
+
+    
+    
+        
+    
+
+
+
+
+        
+
+
+            
+                
+
+        
+        

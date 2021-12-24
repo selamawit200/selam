@@ -1,0 +1,93 @@
+nav ul{
+        
+    list-style-type: none;
+   
+    display: flex;
+
+ justify-content: center;
+
+    position: relative;
+    
+    }
+     
+    nav ul li a { 
+       
+        border-radius:25% ;
+        padding: 0.5em ;
+        margin: 0.5em;
+        background-color: cornsilk;
+        float: left;}
+        img[src ^="sel.jpg"]{ border-radius:100%;}
+
+        .button__container{clear: left;
+            float: right; }
+        footer{clear: right;}
+        .h1__contact{
+            text-transform:uppercase;
+            font-family: serif;
+            font: xx-large;}
+        
+        .photo__container{display: grid;
+            grid-template-columns:25% 75% ;
+            grid-template-rows:auto ;}
+            .photo{grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 2;}
+            .navigations{grid-column-start: 2;
+                    grid-column-end: 3;
+                    grid-row-start: 1;
+                    grid-row-end: 2}
+                    .button__footer{display: grid;
+                        grid-template-columns:33% 33% 33%;
+                        grid-template-rows:auto auto;}
+                        .button__container{grid-column-start: 2;
+                            grid-column-end: 4;
+                            grid-row-start: 1;
+                            grid-row-end: 2;}
+                        .footer__container{grid-column-start: 1;
+                                grid-column-end: 4;
+                                grid-row-start: 2;
+                                grid-row-end: 3}
+                                .form__radio{display: flex;}
+                                .radio__list{margin: 30px;}
+           
+        
+                
+            
+                
+            
+body{background-color: darkturquoise;}
+            @media screen and (max-width:70em){
+                .photo__container{
+                    display: block;
+                    flex-wrap: wrap;
+                }
+                .form__radio{ display: block;
+                    flex-wrap: wrap;}
+             .button__footer{ display: block;
+                flex-wrap: wrap;}
+                .h1__contact{ display:block;
+                    flex-wrap: wrap;}
+                }
+                    @media screen and (max-width:30em){
+                        img {width:50;
+                        height:50}
+                        nav ul li a { 
+       
+                            border-radius:15% ;
+                            padding: 0.3em ;
+                            margin: 0.3em;
+            
+                        }
+}
+@media screen and (max-width:10em){ 
+     img {width:10;
+height:1o;}
+nav ul li a { 
+       
+    border-radius:10% ;
+    padding: 0.1em ;
+    margin: 0.1em;}
+        }
+    

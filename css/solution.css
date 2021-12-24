@@ -1,0 +1,95 @@
+nav ul{
+    list-style-type: none;
+               
+    display: flex;
+    
+    justify-content: center;
+    
+    position: relative;
+}
+     
+       
+ nav ul li a {border-radius:25% ;
+        padding: 0.5em ;
+        margin: 0.5em;
+    background-color: cornsilk;
+        float: left;}
+img[src ^="sel.jpg"]{ border-radius:100%;}
+video{transform: perspective();}
+.h1sol{
+text-transform:uppercase;
+font-family: serif;
+font: xx-large;}
+.photo__container{display: grid;
+    grid-template-columns:25% 75% ;
+    grid-template-rows:auto ;}
+    .photo{grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;}
+    .navigations{grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2}
+.problem__login{display: grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows:auto  ;}
+    
+    .problem__solve{grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;}
+    .login{grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;}
+            .form__foot{display: grid;
+                grid-template-columns:33% 33% 33%  ;
+                grid-template-rows:auto auto;}
+                .form__button{grid-column-start: 3;
+                    grid-column-end: 4;
+                    grid-row-start: 1;
+                    grid-row-end: 2;}
+                .foot{grid-column-start: 1;
+                        grid-column-end: 4;
+                        grid-row-start: 2;
+                        grid-row-end: 3}
+            .form__button{float: right;}
+            footer{clear:right;}
+            body{background-color: cornflowerblue;}
+            button{border-radius: 25%;}
+            @media screen and (max-width:70em){
+                .photo__container{
+                    display: block;
+                    flex-wrap: wrap;}
+                    .problem__login{
+                        display: block;
+                        flex-wrap: wrap;}
+                        .form__foot{
+                            display: block;
+                  
+                            flex-wrap: wrap;}
+                            .h1sol{  display: block;
+                                flex-wrap: wrap;}
+                }
+
+                @media screen and (max-width:30em){
+                    img ,video{width:50;
+                    height:50}
+                    nav ul li a { 
+   
+                        border-radius:15% ;
+                        padding: 0.3em ;
+                        margin: 0.3em;
+        
+                    }
+}
+@media screen and (max-width:10em){ 
+ img,video {width:10;
+height:1o;}
+nav ul li a { 
+   
+border-radius:10% ;
+padding: 0.1em ;
+margin: 0.1em;}
+    }

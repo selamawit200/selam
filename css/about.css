@@ -1,0 +1,136 @@
+nav ul{
+        
+    list-style-type: none;
+   
+    display: flex;
+
+ justify-content: center;
+
+    position: relative;
+    /* bottom: 7em; */
+    
+}
+     
+    nav ul li a { 
+       
+        border-radius:25% ;
+        padding: 0.5em ;
+        margin: 0.5em;
+        background-color:cornsilk;
+        float: left;}
+
+
+
+
+table,th,td{border :1px solid black ;
+
+border-collapse: collapse;
+padding: auto;
+margin: auto;
+width:1em;
+height:1em
+ }
+
+.selam__docment{color:black ;
+    position: relative;
+
+    flex-direction: row;
+    }
+    
+a :link{color:blue;}
+
+img[src ^="sel.jpg"]{ border-radius:100%;}
+.photo__container{display: grid;
+    grid-template-columns:25% 75% ;
+    grid-template-rows:auto ;}
+    
+    .photo{grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;}
+    
+    
+    .navigations{
+        grid-column-start: 2;
+        grid-column-end:4;
+        grid-row-start: 1;
+        grid-row-end: 2;}
+        .docment__container{display:grid;
+            grid-template-columns:33%33% 33%;
+           grid-template-rows:auto  ;
+           grid-gap :1em;
+        }
+           .table{ grid-column-start: 1;
+                   grid-column-end:3;
+                   grid-row-start: 1;
+                   grid-row-end: 2;
+                 }
+           .selam__docment{ grid-column-start:3;
+               grid-column-end:4;
+               grid-row-start: 1;
+               grid-row-end: 2;}  
+           .main__container{display:grid;
+             grid-template-columns:33% 33% 33% ;
+            grid-template-rows:auto auto auto auto ;
+            grid-gap: 1px 1px;}
+           
+            
+                
+        .list{grid-column-start:2;
+                    grid-column-end:4;
+                    grid-row-start: 1;
+                    grid-row-end:2;}
+        .figure{grid-column-start: 1;
+                grid-column-end :4;
+                grid-row-start: 2;
+            grid-row-end: 3;
+        flex-direction: row;}
+        .comments{grid-column-start: 2;
+                    grid-column-end:4;
+                    grid-row-start:3;
+                    grid-row-end:4;}
+        .footer{grid-column-start: 1;
+                        grid-column-end :4;
+                        grid-row-start: 4;
+                        grid-row-end: 5;}
+                 body{background-color: cornflowerblue;} 
+                    .h1about{
+                        text-transform:uppercase;
+                        font-family: serif;
+                        font: xx-large;
+                    }
+                    @media screen and (max-width:70em){
+                        .photo__container{
+                            display: block;
+                            flex-wrap: wrap;}
+                        .docment__container{display: block;
+                                        flex-wrap: wrap;}
+                             .main__container{ display: block;
+                                        flex-wrap: wrap;}
+                                    .h1about{ display:block;
+                                        flex-wrap: wrap;}
+                                    }
+                                    @media screen and (max-width:30em){
+                                        img {width:50;
+                                        height:50}
+                                        table{width:0.5em;
+                                        height:0.5em}
+                                        nav ul li a { 
+
+                                            border-radius:15% ;
+                                            padding: 0.3em ;
+                                            margin: 0.3em;
+                                    
+                                        }
+}
+@media screen and (max-width:10em){  img {width:10;
+    height:1o}
+    table{width:0.1em;
+        height:0.1em}
+        nav ul li a { 
+
+            border-radius:10% ;
+            padding: 0.1em ;
+            margin: 0.1em;}
+            }
+
